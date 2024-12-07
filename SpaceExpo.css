@@ -1,0 +1,459 @@
+/* Video Background Styling */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire background */
+  z-index: -1; /* Sends the video behind the content */
+}
+
+/* General Styles */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #000; /* Ensure background is black behind content */
+}
+.site-title {
+  text-align: center;
+  background: fixed;
+  background-color: #000;
+
+}
+/* Navigation Styles */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 29, 61, 0.8);
+  padding: 15px 0;
+  border-bottom: 2px solid #fca311;
+}
+
+.main-nav a {
+  margin: 0 10px;
+  font-size: 1.1rem;
+  color: #fca311;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Search Form */
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 8px;
+  border: 1px solid #fca311;
+  border-radius: 5px;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.search-container button {
+  padding: 8px 15px;
+  background-color: #fca311;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #ffffff;
+  color: #fca311;
+}
+
+/* Content Wrapper */
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Intro Section Styling */
+.intro {
+  text-align: center;
+  color: #fca311;
+  font-size: 2rem;
+  margin: 50px 0;
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: #fca311;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fca311;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: 300;
+  color: #fca311;
+}
+
+/* Explore Options */
+.explore-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.option {
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.3);
+}
+
+.option img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Modals for Detailed Information */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+
+.close-btn {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #fca311;
+}
+
+/* New Section for Intro Text */
+.intro {
+  text-align: center;
+  color: white;
+  margin-top: 100px; /* Adds space from top of the page */
+}
+
+.intro h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fca311;
+  margin-bottom: 30px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fca311;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom Styling for 'FUTURE OF SPACE EXPLORATION' */
+#future-of-space-exploration {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fca311; /* Same color as "MARS COLONIZATION AND BEYOND" */
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+#future-of-space-exploration h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+
+#future-of-space-exploration p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fca311;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2.8rem;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .option {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .option img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #future-of-space-exploration {
+    font-size: 2rem;
+  }
+
+  #future-of-space-exploration h2 {
+    font-size: 3rem;
+  }
+
+  #future-of-space-exploration p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro p {
+    font-size: 0.9rem;
+  }
+
+  .option {
+    width: 120px;
+    padding: 12px;
+  }
+
+  .option img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #future-of-space-exploration {
+    font-size: 1.8rem;
+  }
+
+  #future-of-space-exploration h2 {
+    font-size: 2.8rem;
+  }
+
+  #future-of-space-exploration p {
+    font-size: 1rem;
+  }
+}
+/* Contact Us Section */
+.contact-us {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(0, 29, 61, 0.8);
+}
+
+.contact-us h2 {
+  font-size: 2rem;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us label {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-us input, .contact-us textarea {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #fca311;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.contact-us button {
+  padding: 10px 20px;
+  background-color: #fca311;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-us button:hover {
+  background-color: white;
+  color: #fca311;
+}
+/* Footer Styling */
+footer {
+  background-color: rgba(0, 29, 61, 0.8);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Modal Styling Enhancement */
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  width: 50%;
+  animation: popUp 0.5s ease-in-out;
+}
+-----------------------------------------------------
+
+.main-nav a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* Modal Styles */
+.modal-toggle {
+  display: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-toggle:checked + .modal {
+  display: block;
+}
+
+.modal-content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-height: 70%;
+  overflow-y: auto;
+}
+
+.close-btn {
+  font-size: 30px;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Option Styles */
+.explore-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.option {
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.option img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.option h1 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #fca311;
+}
+
+.option:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+} 
